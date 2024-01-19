@@ -32,7 +32,13 @@ public class Custumer {
     }
 
 
-
-
+    @Override
+    public String toString() {
+        return "Custumer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", tier=" + tier +
+                '}';
+    }
 }
 
