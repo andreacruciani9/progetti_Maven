@@ -6,14 +6,15 @@ import java.util.Date;
 abstract class Catalogo {
     private long codiceISBN;
     private String titolo;
-    private  LocalDate annoPubblicazione;
+    private  int annoPubblicazione;
     private int numeroPagine;
 
-    public Catalogo( String titolo, LocalDate annoPubblicazione, int numeroPagine) {
+    public Catalogo( String titolo, int annoPubblicazione, int numeroPagine) {
         this.codiceISBN = genralsbnlibro();
         this.titolo = titolo;
         this.annoPubblicazione = annoPubblicazione;
         this.numeroPagine = numeroPagine;
+
     }
 
     @Override
@@ -34,7 +35,7 @@ abstract class Catalogo {
         return titolo;
     }
 
-    public LocalDate getAnnoPubblicazione() {
+    public int getAnnoPubblicazione() {
         return annoPubblicazione;
     }
 

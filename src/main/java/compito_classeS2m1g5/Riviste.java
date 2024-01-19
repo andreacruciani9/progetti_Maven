@@ -6,7 +6,7 @@ import java.util.Date;
 public class Riviste extends Catalogo{
 
     private PeriodicitaRiviste periodicita;
-    public Riviste( String titolo, LocalDate annoPubblicazione, int numeroPagine, PeriodicitaRiviste periodicita) {
+    public Riviste( String titolo, int annoPubblicazione, int numeroPagine, PeriodicitaRiviste periodicita) {
         super( titolo, annoPubblicazione, numeroPagine);
         this.periodicita =periodicita;
 

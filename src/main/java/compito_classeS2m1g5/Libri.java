@@ -9,7 +9,7 @@ public class Libri extends Catalogo{
     private String genere;
 
 
-    public Libri( String titolo, LocalDate annoPubblicazione, int numeroPagine, String autore, String genere) {
+    public Libri( String titolo, int annoPubblicazione, int numeroPagine, String autore, String genere) {
         super( titolo, annoPubblicazione, numeroPagine);
 
     this.autore =autore;
